@@ -9,19 +9,16 @@ const Post = ({ displayName, username, isVerified, text, avatar, image }) => {
   return (
     <div className="post">
       <div className="post__avatar">
-        <Avatar src="https://images.unsplash.com/photo-1544723795-3fb6469f5b39?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=778&q=80" />
+        <Avatar src={avatar} />
       </div>
       <div className="post__body">
         <div className="post__header">
-          <h3>Qazi</h3>
-          <VerifiedIcon className="post__verifiedIcon" />
-          <span>@asas</span>
+          <h3>{displayName}</h3>
+          {isVerified && <VerifiedIcon className="post__verifiedIcon" />}
+          <span>@{username}</span>
         </div>
-        <div className="post__content">Hello</div>
-        <img
-          src="https://media.giphy.com/media/3otPowxHIzVT4XP8Bi/giphy.gif"
-          alt=""
-        />
+        <div className="post__content">{text}</div>
+        <img src={image} alt="" />
 
         <div className="post__footer">
           <ChatBubbleOutlineIcon fontSize="small" />
