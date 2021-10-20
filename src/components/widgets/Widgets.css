@@ -1,3 +1,30 @@
 .widgets {
   flex: 0.3;
+  padding: 10px;
+}
+.widgets__input {
+  display: flex;
+  padding: 7px 10px;
+  background-color: var(--background-color);
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+.widgets__searchIcon {
+  color: grey;
+}
+
+.widgets__input > input {
+  border: none;
+  background-color: inherit;
+}
+
+.widgets__content {
+  margin-top: 15px;
+  padding: 20px;
+  background-color: #f5f8fa;
+  border-radius: 20px;
+}
+.widgets__content > h2 {
+  font-size: 18px;
+  font-weight: 800;
 }

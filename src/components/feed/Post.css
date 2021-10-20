@@ -29,7 +29,7 @@
 }
 .post__verifiedIcon {
   color: var(--twitter-color);
-  margin: 0 10px;
+  margin: 0 10px 0 5px;
   font-size: 16px !important;
 }
 .post__content {
