@@ -4,7 +4,10 @@ import {
   TwitterTweetEmbed,
   TwitterMentionButton,
 } from "react-twitter-embed";
+
 import "./Widgets.css";
+
+// Right side of the home screen. 
 const Widgets = () => {
   return (
     <div className="widgets">

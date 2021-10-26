@@ -2,7 +2,14 @@ import Feed from "./components/feed/Feed";
 import Sidebar from "./components/sidebar/Sidebar";
 import "./App.css";
 import Widgets from "./components/widgets/Widgets";
-const app = () => {
+import { useEffect } from "react";
+const App = () => {
+
+ 
+  useEffect(() => {
+    document.title = "Twitter"
+ }, []);
+
   return (
     <div className="app">
       <Sidebar />
@@ -12,4 +19,4 @@ const app = () => {
   );
 };
 
-export default app;
+export default App;
